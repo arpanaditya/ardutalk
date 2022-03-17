@@ -1,1 +1,89 @@
-<h1> Coming Soon </h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <title>ArduTalk</title>
+  </head>
+  <body class="min-h-screen">
+    <!-- Landing Page -->
+    <!-- About the event -->
+    <section
+      class="h-screen w-screen flex justify-center items-center bg-blue-300 mt-16"
+    >
+      <nav class="w-full h-16 bg-white fixed top-0 left-0 flex justify-between">
+        <div class="w-1/4 text-4xl font-bold flex justify-center items-center">
+          LOGO
+        </div>
+        <div class="w-3/4 sm:flex items-center h-full justify-evenly hidden">
+          <div
+            class="hover:bg-black hover:text-white font-bold cursor-pointer h-full flex justify-center items-center px-5"
+          >
+            About
+          </div>
+          <div
+            class="hover:bg-black hover:text-white font-bold cursor-pointer h-full flex justify-center items-center px-5"
+          >
+            Workshops
+          </div>
+          <div
+            class="hover:bg-black hover:text-white font-bold cursor-pointer h-full flex justify-center items-center px-5"
+          >
+            Schedule
+          </div>
+          <div
+            class="hover:bg-black hover:text-white font-bold cursor-pointer h-full flex justify-center items-center px-5"
+          >
+            Speakers
+          </div>
+        </div>
+      </nav>
+      <h1 class="text-6xl">About</h1>
+    </section>
+    <!-- Workshop List -->
+    <section
+      class="h-screen w-screen flex justify-center text-6xl items-center bg-red-300"
+    >
+      Workshops
+    </section>
+    <!-- Schedule -->
+    <section
+      class="h-screen w-screen flex justify-center text-6xl items-center bg-yellow-300"
+    >
+      Schedule
+    </section>
+    <!-- Top Guests -->
+    <section
+      class="h-screen w-screen flex justify-center text-6xl items-center bg-purple-300"
+    >
+      Speakers
+    </section>
+    <!-- Footer -->
+    <footer
+      class="w-screen h-96 bg-black flex justify-center text-6xl items-center text-white"
+    >
+      Footer
+    </footer>
+  </body>
+</html>
